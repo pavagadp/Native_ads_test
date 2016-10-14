@@ -1,2 +1,2 @@
 var abc = "Sometext";
-echo "Dumb";
+echo "<html><boyd>Dumb</body></html>";
