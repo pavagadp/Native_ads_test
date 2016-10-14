@@ -1,2 +1,5 @@
 var abc = "Sometext";
-echo "<html><boyd>Dumb</body></html>";
+function foo()
+{
+  document.getElementById('testid').innerHTML = "Hello";
+}
