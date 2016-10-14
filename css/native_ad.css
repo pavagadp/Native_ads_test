@@ -17,7 +17,7 @@ body
     height: 100px;
     float: left;
     margin: 0 20px 10px 0;
-    background-image: url([%Image%]);
+    background-image: url('../images/image.png');
     background-size: cover;
 }
 
