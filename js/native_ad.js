@@ -1,5 +1,5 @@
 var abc = "Sometext";
-function foo()
+function foo(x)
 {
-  document.getElementById('testid').innerHTML = "Hello";
+  document.getElementById(x).innerHTML = abc;
 }
