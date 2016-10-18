@@ -17,15 +17,8 @@ function elementInViewport(el) {
     (left + width) > window.pageXOffset
   );
 }
-
-
-console.log("testing log");
 document.onscroll = function(){
-    
-
 var d = document.getElementById("test");
-
-console.log(d);
     if(elementInViewport(d)) {
            d.classList.add('zoomad');
         d.classList.remove('zoomoutad');
