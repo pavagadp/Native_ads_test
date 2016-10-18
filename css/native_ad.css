@@ -9,10 +9,61 @@ p {
 #iframe{
 	height: 331px;
 	width: 368px;
+	
 	}
-.demo{
+.demo1{
 	height: 300px;
 	width:390px;
+	background: url(../images/1.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+.demo2{
+	height: 300px;
+	width:390px;
+	background: url(../images/2.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+     }
+.demo3{
+	height: 300px;
+	width:390px;
+	background: url(../images/3.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+     }
+.demo4{
+	height: 300px;
+	width:390px;
+	background: url(../images/4.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+     }
+.demo5{
+	height: 300px;
+	width:390px;
+	background: url(../images/5.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+     }
+.demo6{
+	height: 300px;
+	width:390px;
+	background: url(../images/6.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+     }
+.demo7{
+	height: 300px;
+	width:390px;
+	background: url(../images/7.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
      }
 #outer {
 	display: inline-block;
