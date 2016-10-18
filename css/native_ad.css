@@ -1,26 +1,25 @@
 .content {
-    overflow: hidden;
+	overflow: hidden;
 }
 p {
-    font-size: 16px;
-    color: #444;
-    margin: 10px 0 10px 0;
+	font-size: 16px;
+	color: #444;
+	margin: 10px 0 10px 0;
 }
 #iframe{
-		    height: 331px;
-    width: 368px;
+	height: 331px;
+	width: 368px;
 	}
-	.demo{
-		height: 200px;
-		width:200px;
-	}
-	#outer {
-  display: inline-block;
-  border: 0;
-  position: relative;
-  overflow: hidden;
+.demo{
+	height: 300px;
+	width:390px;
+     }
+#outer {
+	display: inline-block;
+	border: 0;
+	position: relative;
+	overflow: hidden;
 }
-
 .zoomad
 {
 
