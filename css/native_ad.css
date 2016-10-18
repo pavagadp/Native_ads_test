@@ -6,8 +6,36 @@ p {
     color: #444;
     margin: 10px 0 10px 0;
 }
-#iframe_id
+#iframe{
+		    height: 331px;
+    width: 368px;
+	}
+	.demo{
+		height: 200px;
+		width:200px;
+	}
+	#outer {
+  display: inline-block;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.zoomad
 {
-	width:331px;
-	height:364px;
+
+    background-position:center;
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+.zoomoutad
+{
+   transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
 }
