@@ -1,4 +1,4 @@
-console.log("Hello there");
+console.log("Hello there  ...");
 function elementInViewport(el) {
    var top = el.offsetTop;
   var left = el.offsetLeft;
