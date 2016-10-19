@@ -19,25 +19,25 @@ p {
 }
 #demo1{
 	background: url(../images/1.jpg) no-repeat;
-       }
+}
 #demo2{
 	background: url(../images/2.jpg) no-repeat;
-      }
+}
 #demo3{
 	background: url(../images/3.jpg) no-repeat;
-       }
+}
 #demo4{
 	background: url(../images/4.jpg) no-repeat;
-       }
+}
 #demo5{
 	background: url(../images/5.jpg) no-repeat;
-        }
+}
 #demo6{
 	background: url(../images/6.jpg) no-repeat;
-        }
+}
 #demo7{
 	background: url(../images/7.jpg) no-repeat;
-       }
+}
 #outer {
 	display: inline-block;
 	border: 0;
@@ -46,21 +46,21 @@ p {
 	height:303px;
 	width:362px;
 }
-.zoomad
-{
-
-    background-position:center;
-    transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
+#test{
+	height: 300px;
 }
-.zoomoutad
-{
-   transform: scale(2);
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
+.zoomad{
+	background-position:center;
+	transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-webkit-transition: all 2s ease;
+	-o-transition: all 2s ease;
+}
+.zoomoutad{
+	transform: scale(2);
+	-moz-transform: scale(2);
+	-webkit-transform: scale(2);
+	-o-transform: scale(2);
+	-ms-transform: scale(2);
 }
