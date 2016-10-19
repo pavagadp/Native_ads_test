@@ -18,8 +18,7 @@ function elementInViewport(el) {
     (left + width) > window.pageXOffset
   );
 }
-
-   console.log("Test1");
+console.log("Test1");
 var d = document.getElementById("card_id");
     if(elementInViewport(d)) {
        console.log("Entered");
