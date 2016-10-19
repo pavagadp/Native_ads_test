@@ -1,4 +1,6 @@
 console.log("Hello there  ...");
+var iframe_parent_div = window.frameElement ? window.frameElement.parentNode : null;
+console.log(iframe_parent_div);
 function elementInViewport(el) {
    var top = el.offsetTop;
   var left = el.offsetLeft;
