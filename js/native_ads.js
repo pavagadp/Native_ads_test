@@ -22,15 +22,15 @@ function elementInViewport(el) {
 }
 console.log("Test1");
 
-window.parent.document.onscroll = function(){
+window.parent.onscroll = function(){
     if(elementInViewport(iframe_parent_div)) {
        console.log("Entered");
-           d.classList.add('zoomad');
-        d.classList.remove('zoomoutad');
+           iframe_parent_div.classList.add('zoomad');
+        iframe_parent_div.classList.remove('zoomoutad');
         
     } else {
-         d.classList.add('zoomoutad');
-        d.classList.remove('zoomad');
+         iframe_parent_div.classList.add('zoomoutad');
+        iframe_parent_div.classList.remove('zoomad');
     }
    };
 
