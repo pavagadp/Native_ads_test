@@ -20,11 +20,12 @@ function elementInViewport(el) {
 }
 document.onscroll = function(){
    var d = document.getElementById("test");
+   var win = document.getElementById("iframe").contentWindow;
     if(elementInViewport(d)) {
        console.log("Element is visible");
-       parent.postMessage('shoot', 'https://varunsk.github.io/');
-           d.classList.add('zoomad');
-           d.classList.remove('zoomoutad');
+       win.postMessage('shoot', 'https://varunsk.github.io/');
+       d.classList.add('zoomad');
+       d.classList.remove('zoomoutad');
     } else {
          d.classList.add('zoomoutad');
         d.classList.remove('zoomad');
