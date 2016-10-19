@@ -7,7 +7,6 @@ function elementInViewport(el) {
 
   while(el.offsetParent) {
     el = el.offsetParent;
-     console.log(el);
     top += el.offsetTop;
     left += el.offsetLeft;
   }
@@ -22,7 +21,7 @@ function elementInViewport(el) {
 window.parent.onscroll = function(){
    var d = document.getElementById("test");
     if(elementInViewport(d)) {
-       top.postMessage('shoot', 'https://github.com/VarunSK/Native_ads_test/blob/gh-pages/native_ad.html');
+       top.postMessage('shoot', 'https://varunsk.github.io/Native_ads_test/native_ad.html');
            d.classList.add('zoomad');
            d.classList.remove('zoomoutad');
     } else {
