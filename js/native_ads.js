@@ -20,6 +20,7 @@ function elementInViewport(el) {
 document.onscroll = function(){
 var d = document.getElementsByClassName("card");
     if(elementInViewport(d)) {
+       console.log("Entered");
            d.classList.add('zoomad');
         d.classList.remove('zoomoutad');
         
