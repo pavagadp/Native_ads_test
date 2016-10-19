@@ -18,6 +18,7 @@ function elementInViewport(el) {
   );
 }
 document.onscroll = function(){
+   console.log("Test1");
 var d = document.getElementsByClassName("card");
     if(elementInViewport(d)) {
        console.log("Entered");
