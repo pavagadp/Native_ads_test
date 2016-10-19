@@ -18,7 +18,7 @@ function elementInViewport(el) {
     (left + width) > window.pageXOffset
   );
 }
-document.onscroll = function(){
+
    console.log("Test1");
 var d = document.getElementById("card_id");
     if(elementInViewport(d)) {
@@ -30,4 +30,4 @@ var d = document.getElementById("card_id");
          d.classList.add('zoomoutad');
         d.classList.remove('zoomad');
     }
- };
+
