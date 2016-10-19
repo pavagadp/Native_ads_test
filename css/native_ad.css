@@ -11,14 +11,14 @@ p {
 	width: 368px;
 	
 	}
-.demo1{
+#demo1{
 	height: 300px;
 	width:372px;
 	background: url(../images/1.jpg) no-repeat;
         background-size: cover;
         background-position: center;
      }
-.demo2{
+#demo2{
 	height: 300px;
 	width:372px;
 	background: url(../images/2.jpg) no-repeat;
@@ -26,7 +26,7 @@ p {
         background-position: center;
 
      }
-.demo3{
+#demo3{
 	height: 300px;
 	width:372px;
 	background: url(../images/3.jpg) no-repeat;
@@ -34,7 +34,7 @@ p {
         background-position: center;
 
      }
-.demo4{
+#demo4{
 	height: 300px;
 	width:372px;
 	background: url(../images/4.jpg) no-repeat;
@@ -42,7 +42,7 @@ p {
         background-position: center;
 
      }
-.demo5{
+#demo5{
 	height: 300px;
 	width:372px;
 	background: url(../images/5.jpg) no-repeat;
@@ -50,7 +50,7 @@ p {
         background-position: center;
 
      }
-.demo6{
+#demo6{
 	height: 300px;
 	width:372px;
 	background: url(../images/6.jpg) no-repeat;
@@ -58,7 +58,7 @@ p {
         background-position: center;
 
      }
-.demo7{
+#demo7{
 	height: 300px;
 	width:372px;
 	background: url(../images/7.jpg) no-repeat;
