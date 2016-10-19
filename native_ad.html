@@ -2,9 +2,10 @@
 	<link rel="stylesheet" type="text/css" href="css/native_ads.css" media="screen">
 	<script type="text/javascript" src="js/native_ads.js"></script>
 	<script type="text/javascript">
-	function listener(event)
-		{
-  			console.log(event.data);
+	function listener(event){
+		if ( event.origin !== "https://varunsk.github.io" )
+    		return
+  		document.getElementById("testing").innerHTML = "received: "+event.data
 		}
 		if (window.addEventListener){
   			addEventListener("message", listener, false)
@@ -14,6 +15,7 @@
 		}
 	</script>
 	<body >
+		<div id="testing"></div>
 		<div id="card_id" class="card">
 		<h1>
 			Get Your Fix at the People Shop
