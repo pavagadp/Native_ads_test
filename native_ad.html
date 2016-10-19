@@ -2,14 +2,22 @@
 	<link rel="stylesheet" type="text/css" href="css/native_ads.css" media="screen">
 	<script type="text/javascript" src="js/native_ads.js"></script>
 	<script type="text/javascript">
-		 window.addEventListener( "message",
-          	function (e) {
-                alert(e.data);
-		console.log(e.data);
-          },
-          false);
+	function listener(event)
+		{
+  			if ( event.origin !== "https://varunsk.github.io/" )
+    				return
+  				document.getElementById("test22").innerHTML = "received: "+event.data
+		}
+		if (window.addEventListener){
+  			addEventListener("message", listener, false)
+		} 
+		else {
+ 			 attachEvent("onmessage", listener)
+		}
 	</script>
 	<body >
+		<div id="test22">Send me a message!</div>
+
 	<div id="card_id" class="card">
 		<h1>
 			Get Your Fix at the People Shop
