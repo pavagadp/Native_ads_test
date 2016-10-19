@@ -9,6 +9,7 @@ function elementInViewport(el) {
 
   while(el.offsetParent) {
     el = el.offsetParent;
+     console.log(el);
     top += el.offsetTop;
     left += el.offsetLeft;
   }
