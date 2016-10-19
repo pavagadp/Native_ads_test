@@ -1,4 +1,9 @@
 console.log("Hello there");
+if ($('#card_id').visible(true)) {
+  console.log("Yes");
+} else {
+  console.log("NO")
+}
 function elementInViewport(el) {
    var top = el.offsetTop;
   var left = el.offsetLeft;
