@@ -18,7 +18,7 @@ function elementInViewport(el) {
   );
 }
 document.onscroll = function(){
-var d = document.getElementById("testi");
+var d = document.getElementById("iframe");
     if(elementInViewport(d)) {
            d.classList.add('zoomad');
         d.classList.remove('zoomoutad');
