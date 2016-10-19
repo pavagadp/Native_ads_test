@@ -1,6 +1,4 @@
-console.log("Hello there  ...");
-var iframe_parent_div = window.frameElement ? window.frameElement.parentNode : null;
-console.log(iframe_parent_div);
+/*console.log("Hello there  ...");
 function elementInViewport(el) {
    var top = el.offsetTop;
   var left = el.offsetLeft;
@@ -36,5 +34,5 @@ window.parent.onscroll = function(){
          d.classList.add('zoomoutad');
         d.classList.remove('zoomad');
     }
-   };
+   };*/
 
