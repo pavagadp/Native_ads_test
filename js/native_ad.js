@@ -19,16 +19,12 @@ function elementInViewport(el) {
     (left + width) > window.pageXOffset
   );
 }
-console.log("Test1");
-
 window.parent.onscroll = function(){
    var d = document.getElementById("test");
     if(elementInViewport(d)) {
        top.postMessage('shoot', 'https://github.com/VarunSK/Native_ads_test/blob/gh-pages/native_ad.html');
-       console.log("Entered");
            d.classList.add('zoomad');
-        d.classList.remove('zoomoutad');
-        
+           d.classList.remove('zoomoutad');
     } else {
          d.classList.add('zoomoutad');
         d.classList.remove('zoomad');
