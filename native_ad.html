@@ -4,9 +4,7 @@
 	<script type="text/javascript">
 	function listener(event)
 		{
-  			if ( event.origin !== "https://varunsk.github.io/" )
-    				return
-  				console.log(event.data);
+  			console.log(event.data);
 		}
 		if (window.addEventListener){
   			addEventListener("message", listener, false)
