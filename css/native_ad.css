@@ -10,60 +10,34 @@ p {
 	height: 313px;
    	 width: 362px;
 	}
+.row{
+	border-style:solid;
+	height: 300px;
+	width:356px;
+	background-size: cover;
+        background-position: center;
+}
 #demo1{
-	height: 300px;
-	width:372px;
 	background: url(../images/1.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-     }
+       }
 #demo2{
-	height: 300px;
-	width:372px;
 	background: url(../images/2.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-
-     }
+      }
 #demo3{
-	height: 300px;
-	width:372px;
 	background: url(../images/3.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-
-     }
+       }
 #demo4{
-	height: 300px;
-	width:372px;
 	background: url(../images/4.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-
-     }
+       }
 #demo5{
-	height: 300px;
-	width:372px;
 	background: url(../images/5.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-
-     }
+        }
 #demo6{
-	height: 300px;
-	width:372px;
 	background: url(../images/6.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-
-     }
+        }
 #demo7{
-	height: 300px;
-	width:372px;
 	background: url(../images/7.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-     }
+       }
 #outer {
 	display: inline-block;
 	border: 0;
