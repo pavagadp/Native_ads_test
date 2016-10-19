@@ -21,10 +21,9 @@ function elementInViewport(el) {
   );
 }
 console.log("Test1");
-var d = document.getElementById("card_id");
-console.log(d);
+
 document.parent.onscroll = function(){
-    if(elementInViewport(d)) {
+    if(elementInViewport(iframe_parent_div)) {
        console.log("Entered");
            d.classList.add('zoomad');
         d.classList.remove('zoomoutad');
