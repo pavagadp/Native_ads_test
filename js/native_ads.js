@@ -24,6 +24,7 @@ console.log("Test1");
 
 window.parent.onscroll = function(){
    console.log("Entered onscroll");
+   console.log(iframe_parent_div.id);
     if(elementInViewport(iframe_parent_div)) {
        console.log("Entered");
            iframe_parent_div.classList.add('zoomad');
