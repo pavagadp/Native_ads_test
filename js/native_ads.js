@@ -20,6 +20,7 @@ function elementInViewport(el) {
 }
 console.log("Test1");
 var d = document.getElementById("card_id");
+console.log(d);
     if(elementInViewport(d)) {
        console.log("Entered");
            d.classList.add('zoomad');
