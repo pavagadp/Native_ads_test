@@ -6,7 +6,7 @@
 		{
   			if ( event.origin !== "https://varunsk.github.io/" )
     				return
-  				document.getElementById("test22").innerHTML = "received: "+event.data
+  				console.log(event.data);
 		}
 		if (window.addEventListener){
   			addEventListener("message", listener, false)
