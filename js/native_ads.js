@@ -35,4 +35,14 @@ window.parent.onscroll = function(){
         d.classList.remove('zoomad');
     }
    };*/
-
+function listener(event){
+		if ( event.origin !== "https://varunsk.github.io" )
+    		return
+  		document.getElementById("testing").innerHTML = "received: "+event.data
+		}
+		if (window.addEventListener){
+  			addEventListener("message", listener, false)
+		} 
+		else {
+ 			 attachEvent("onmessage", listener)
+		}
