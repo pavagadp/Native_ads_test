@@ -22,7 +22,7 @@ function elementInViewport(el) {
 }
 console.log("Test1");
 
-document.onscroll = function(){
+window.parent.onscroll = function(){
     if(elementInViewport(iframe_parent_div)) {
        console.log("Entered");
            d.classList.add('zoomad');
