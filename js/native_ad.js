@@ -18,11 +18,11 @@ function elementInViewport(el) {
     (left + width) > window.pageXOffset
   );
 }
-window.parent.onscroll = function(){
+document.onscroll = function(){
    var d = document.getElementById("test");
     if(elementInViewport(d)) {
        console.log("Element is visible");
-       top.postMessage('shoot', 'https://varunsk.github.io/Native_ads_test/native_ad.html');
+       parent.postMessage('shoot', 'https://varunsk.github.io/Native_ads_test/native_ad.html');
            d.classList.add('zoomad');
            d.classList.remove('zoomoutad');
     } else {
