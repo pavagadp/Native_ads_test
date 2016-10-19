@@ -19,7 +19,7 @@ function elementInViewport(el) {
   );
 }
 document.onscroll = function(){
-var d = document.getElementById("test");
+var d = document.getElementById("testi");
     if(elementInViewport(d)) {
            d.classList.add('zoomad');
         d.classList.remove('zoomoutad');
