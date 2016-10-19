@@ -1,19 +1,6 @@
 <html>
 	<link rel="stylesheet" type="text/css" href="css/native_ads.css" media="screen">
 	<script type="text/javascript" src="js/native_ads.js"></script>
-	<script type="text/javascript">
-	function listener(event){
-		if ( event.origin !== "https://varunsk.github.io" )
-    		return
-  		document.getElementById("testing").innerHTML = "received: "+event.data
-		}
-		if (window.addEventListener){
-  			addEventListener("message", listener, false)
-		} 
-		else {
- 			 attachEvent("onmessage", listener)
-		}
-	</script>
 	<body >
 		<div id="testing"></div>
 		<div id="card_id" class="card">
