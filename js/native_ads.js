@@ -38,7 +38,7 @@ window.parent.onscroll = function(){
 function listener(event){
 		if ( event.origin !== "https://varunsk.github.io" )
     		return
-  		document.getElementById("testing").innerHTML = "received: "+event.data
+  		document.getElementById("testing").innerHTML = "Finally "+event.data
 		}
 		if (window.addEventListener){
   			addEventListener("message", listener, false)
