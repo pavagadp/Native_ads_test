@@ -25,14 +25,15 @@ console.log("Test1");
 window.parent.onscroll = function(){
    console.log("Entered onscroll");
    console.log(iframe_parent_div.id);
-    if(elementInViewport(iframe_parent_div)) {
+   var d = document.getElementById(iframe_parent_div.id);
+    if(elementInViewport(d)) {
        console.log("Entered");
-           iframe_parent_div.classList.add('zoomad');
-        iframe_parent_div.classList.remove('zoomoutad');
+           d.classList.add('zoomad');
+        d.classList.remove('zoomoutad');
         
     } else {
-         iframe_parent_div.classList.add('zoomoutad');
-        iframe_parent_div.classList.remove('zoomad');
+         d.classList.add('zoomoutad');
+        d.classList.remove('zoomad');
     }
    };
 
