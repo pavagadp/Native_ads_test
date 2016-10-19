@@ -18,7 +18,7 @@ function elementInViewport(el) {
   );
 }
 document.onscroll = function(){
-var d = document.getElementsByClassName("card");
+var d = document.getElementsById("test");
     if(elementInViewport(d)) {
            d.classList.add('zoomad');
         d.classList.remove('zoomoutad');
