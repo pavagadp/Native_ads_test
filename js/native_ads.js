@@ -20,7 +20,7 @@ function elementInViewport(el) {
 }
 document.onscroll = function(){
    console.log("Test1");
-var d = document.getElementsById("card_id");
+var d = document.getElementById("card_id");
     if(elementInViewport(d)) {
        console.log("Entered");
            d.classList.add('zoomad');
