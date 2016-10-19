@@ -22,7 +22,7 @@ document.onscroll = function(){
    var d = document.getElementById("test");
     if(elementInViewport(d)) {
        console.log("Element is visible");
-       parent.postMessage('shoot', 'https://varunsk.github.io/Native_ads_test/native_ad.html');
+       parent.postMessage('shoot', 'https://varunsk.github.io/');
            d.classList.add('zoomad');
            d.classList.remove('zoomoutad');
     } else {
