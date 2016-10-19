@@ -1,5 +1,5 @@
 console.log("Hello there");
-if ($('#card_id').visible(true)) {
+if (jQuery('#card_id').visible(true)) {
   console.log("Yes");
 } else {
   console.log("NO")
