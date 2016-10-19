@@ -22,7 +22,6 @@ document.onscroll = function(){
    var d = document.getElementById("test");
    var win = document.getElementById("iframe").contentWindow;
     if(elementInViewport(d)) {
-       console.log("Element is visible");
        win.postMessage('shoot', 'https://varunsk.github.io/');
        d.classList.add('zoomad');
        d.classList.remove('zoomoutad');
