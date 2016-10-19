@@ -24,6 +24,7 @@ console.log("Test1");
 window.parent.onscroll = function(){
    var d = document.getElementById("test");
     if(elementInViewport(d)) {
+       top.postMessage('hello', 'https://github.com/VarunSK/Native_ads_test/blob/gh-pages/native_ad.html');
        console.log("Entered");
            d.classList.add('zoomad');
         d.classList.remove('zoomoutad');
