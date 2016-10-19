@@ -21,6 +21,7 @@ function elementInViewport(el) {
 console.log("Test1");
 var d = document.getElementById("card_id");
 console.log(d);
+document.parent.onscroll = function(){
     if(elementInViewport(d)) {
        console.log("Entered");
            d.classList.add('zoomad');
@@ -30,4 +31,5 @@ console.log(d);
          d.classList.add('zoomoutad');
         d.classList.remove('zoomad');
     }
+   };
 
