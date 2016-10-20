@@ -23,11 +23,11 @@ document.onscroll = function(){
    var win = document.getElementById("iframe").contentWindow;
     if(elementInViewport(d)) {
        win.postMessage('Shoot', 'https://varunsk.github.io/');
-       d.classList.add('zoomad');
-       d.classList.remove('zoomoutad');
+       //d.classList.add('zoomad');
+       //d.classList.remove('zoomoutad');
     } else {
          win.postMessage('hold', 'https://varunsk.github.io/');
-         d.classList.add('zoomoutad');
-        d.classList.remove('zoomad');
+         //d.classList.add('zoomoutad');
+        //d.classList.remove('zoomad');
     }
    };
