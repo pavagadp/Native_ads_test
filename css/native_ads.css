@@ -89,3 +89,14 @@ h2{
 	-o-transform: scale(2);
 	-ms-transform: scale(2);
 }
+#outer {
+	display: inline-block;
+	border: 0;
+	position: relative;
+	overflow: hidden;
+	height:303px;
+	width:362px;
+}
+#test{
+	height: 300px;
+}
