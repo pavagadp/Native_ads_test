@@ -36,7 +36,8 @@ window.parent.onscroll = function(){
     }
    };*/
 function listener(event){
-	if ( event.origin !== "https://varunsk.github.io" ){return}
+	if ( event.origin !== "https://varunsk.github.io" )
+		return
 	if(event.data == 'Shoot'){
 		var d = document.getElementById("test");
 		d.classList.add('zoomad');
