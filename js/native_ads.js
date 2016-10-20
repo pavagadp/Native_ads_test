@@ -36,13 +36,17 @@ window.parent.onscroll = function(){
     }
    };*/
 function listener(event){
-		if ( event.origin !== "https://varunsk.github.io" )
-    		return
-  		document.getElementById("testing").innerHTML = event.data;
+	if ( event.origin !== "https://varunsk.github.io" ){return}
+	if(event.data == 'Shoot'){
+		var d = document.getElementById("test");
+		d.classList.add('zoomad');
+       	        d.classList.remove('zoomoutad');
 		}
-		if (window.addEventListener){
-  			addEventListener("message", listener, false)
-		} 
-		else {
- 			 attachEvent("onmessage", listener)
-		}
+	document.getElementById("testing").innerHTML = event.data;
+	}
+	if (window.addEventListener){
+		addEventListener("message", listener, false)
+	} 
+	else {
+		 attachEvent("onmessage", listener)
+	}
