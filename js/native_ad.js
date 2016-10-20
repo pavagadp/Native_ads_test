@@ -22,7 +22,7 @@ document.onscroll = function(){
    var d = document.getElementById("test");
    var win = document.getElementById("iframe").contentWindow;
     if(elementInViewport(d)) {
-       win.postMessage('shoot', 'https://varunsk.github.io/');
+       win.postMessage('Shoot', 'https://varunsk.github.io/');
        d.classList.add('zoomad');
        d.classList.remove('zoomoutad');
     } else {
