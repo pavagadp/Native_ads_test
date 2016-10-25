@@ -1,53 +1,40 @@
-/*console.log("Hello there  ...");
-function elementInViewport(el) {
-   var top = el.offsetTop;
-  var left = el.offsetLeft;
-  var width = el.offsetWidth;
-  var height = el.offsetHeight;
-
-  while(el.offsetParent) {
-    el = el.offsetParent;
-     console.log(el);
-    top += el.offsetTop;
-    left += el.offsetLeft;
-  }
-
-  return (
-    top < (window.pageYOffset + window.innerHeight) &&
-    left < (window.pageXOffset + window.innerWidth) &&
-    (top + height) > window.pageYOffset &&
-    (left + width) > window.pageXOffset
-  );
+var zoom = 1.5;
+function apply_scale(zoom){
+  var elem = document.getElementById("image_area");
+  elem.style.transform = "scale("+zoom+")";
+  elem.style.webkitTransform = "scale("+zoom+")";
+  elem.style.MozTransform = "scale("+zoom+")";
+  elem.style.msTransform = "scale("+zoom+")";
 }
-console.log("Test1");
 
-window.parent.onscroll = function(){
-   console.log("Entered onscroll");
-   console.log(iframe_parent_div.id);
-   var d = document.getElementById(iframe_parent_div.id);
-    if(elementInViewport(d)) {
-       console.log("Entered");
-           d.classList.add('zoomad');
-        d.classList.remove('zoomoutad');
-        
-    } else {
-         d.classList.add('zoomoutad');
-        d.classList.remove('zoomad');
-    }
-   };*/
+function zoom_action(flag,boundary){
+  if(zoom > 1 && zoom!=boundary){
+        apply_scale(zoom);
+        zoom=zoom+(flag*0.005);
+      }
+      else{
+        zoom = 1.005;
+      }
+}
 function listener(event){
-	if ( event.origin !== "https://varunsk.github.io" )
-		return
-	if(event.data == 'Shoot'){
-		var d = document.getElementById("test");
-		d.classList.add('zoomad');
-       	        d.classList.remove('zoomoutad');
-		}
-	document.getElementById("testing").innerHTML = event.data;
-	}
-	if (window.addEventListener){
-		addEventListener("message", listener, false)
-	} 
-	else {
-		 attachEvent("onmessage", listener)
-	}
+    if ( event.origin !== "https://varunsk.github.io" )
+      return
+    if(event.data == 'Shoot'){
+      //var d = document.getElementById("test");
+    }
+    if(event.data == 'Up'){
+      zoom_action(1,2.5);
+    }
+    else if(event.data == 'Down'){
+      zoom_action(-1,1.6);
+    }
+    else if(event.data == 'Stop animation')
+    {
+    }
+  }
+  if (window.addEventListener){
+    addEventListener("message", listener, false)
+  } 
+  else {
+     attachEvent("onmessage", listener)
+  }
