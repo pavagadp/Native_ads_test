@@ -19,22 +19,7 @@
             };
             
         </script>
-      <script src="http://tia.timeinc.net/timeinc/tia_tgx.min.js"></script>
-        <script>
-            // define ad slot
-            time_dfp = time_dfp || [];
-            time_dfp.push(function(){time_dfp.init(tia_config);});
-            time_dfp.push(function(){
-                 time_dfp.defineSlot({
-                    id: 'ad1',
-                    size: [300, 250],
-                    targeting: {
-                        'test': 'native'
-                    },
-                    collapse: false
-                  });
-            });
-        </script> 
+      
 
         <style>
             .ad > div > iframe {
@@ -61,5 +46,21 @@
     <div class="row" id="demo5"></div> 
     <div class="row" id="demo6"></div>
     <div class="row" id="demo7"></div>
+    <script src="http://tia.timeinc.net/timeinc/tia_tgx.min.js"></script>
+        <script>
+            // define ad slot
+            time_dfp = time_dfp || [];
+            time_dfp.push(function(){time_dfp.init(tia_config);});
+            time_dfp.push(function(){
+                 time_dfp.defineSlot({
+                    id: 'ad1',
+                    size: [300, 250],
+                    targeting: {
+                        'test': 'native'
+                    },
+                    collapse: false
+                  });
+            });
+        </script> 
   </body>
 </html>
