@@ -25,7 +25,7 @@ var lastScrollTop = 0;
         scrollTimeout = setTimeout(function(){
           //inform to stop animation
           var win = document.getElementById("iframe").contentWindow;
-          win.postMessage('Stop animation','http://localhost');
+          win.postMessage('Stop animation','https://varunsk.github.io');
         }, 100);
       }
         scrollHandler();
