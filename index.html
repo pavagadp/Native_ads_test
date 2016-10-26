@@ -2,28 +2,6 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <script type="application/javascript">
-            var tia_config = {
-                setTargeting: {
-                    'site':'time.com'
-                },
-                setGlobalTargeting: {ch:'home'},
-                enableSingleRequest:false,
-                collapseEmptyDivs:true,
-                sitename:'tim',
-                zone:'native_test',
-                useBehaviorTracking:true,
-                useRevSciTracking:true,
-                useQuantcastTracking:true,
-                useTacodaTracking:true
-            };
-        </script>
-        <style>
-            .ad > div > iframe {
-                display: block;
-            }
-            
-        </style>
     <title>Native ads test</title>
     <link rel="stylesheet" type="text/css" href="css/native_ad.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -38,26 +16,8 @@
     <div id="test">
         <iframe id="iframe" src="native_ad.html"></iframe>
     </div>
-    <div class="ad" id="ad1" style="width: 300px; height: 250px; display: block"></div>
-        <button onclick="window.time_dfp.push(function(){window.time_dfp.refresh('ad1');});">refresh this ad</button>
     <div class="row" id="demo5"></div> 
     <div class="row" id="demo6"></div>
     <div class="row" id="demo7"></div>
-    <script src="https://tia.timeinc.net/timeinc/tia_tgx.min.js"></script>
-        <script>
-            // define ad slot
-            time_dfp = time_dfp || [];
-            time_dfp.push(function(){time_dfp.init(tia_config);});
-            time_dfp.push(function(){
-                 time_dfp.defineSlot({
-                    id: 'ad1',
-                    size: [300, 250],
-                    targeting: {
-                        'test': 'native'
-                    },
-                    collapse: false
-                  });
-            });
-        </script> 
   </body>
 </html>
