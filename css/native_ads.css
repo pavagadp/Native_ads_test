@@ -3,10 +3,11 @@ html,body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 #inner {
-	height: 300px;
-	width: 360px;
+	height: 315px;
+	width: 315px;
 	position: absolute;
 	top: 1%;
 }
@@ -14,7 +15,7 @@ h1 {
 	font-family: Helvetica;
 	font-size: 18px;
 	position: relative;
-	padding-left: 41%;
+	padding-left: 36%;
 	color: white;
 	height: 34px;
 }
@@ -24,7 +25,7 @@ h1 {
 	font-family: Helvetica;
 	font-size: 10px;
 	padding-left: 13%;
-	padding-top: 1.9%;
+	padding-top: 2%;
 }
 h2{
 	font-size: 13px;
@@ -33,21 +34,21 @@ h2{
 	font-weight: 100;
 }
 #body{
-	padding-left: 43%;
+	padding-left: 36%;
 }
 .attribution {
-	margin-left: 43%;
+	margin-left: 36%;
 	margin-top: -3%;
-	width: 146px;
+	width: 134px;
 	display: block;
 	border: 1px solid white;
-	height: 24px;
+	height: 21px;
 }
 #logo{ 
 	position: absolute;
-    top: 70%;
-    width: 30%;
-    left: 60%;
+	top: 72%;
+	width: 30%;
+	left: 61%;
 }
 .helper{
 	padding-top: 2%;
@@ -56,6 +57,6 @@ h2{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 300px;
-	width: 362px;
+	height: 315px;
+	width: 315px;
 }
