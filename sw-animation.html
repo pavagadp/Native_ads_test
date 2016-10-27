@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            @-webkit-keyframes zoom-rotate {
+                0%   {background-position: left top}
+                25%  {background-position: right top;}
+                50%  {background-position: right bottom;}
+                75%  {background-position: left bottom;}
+                100% {background-position: left top;}
+            }
+            @keyframes zoom-rotate {
+                0%   {background-position: left top}
+                25%  {background-position: right top;}
+                50%  {background-position: right bottom;}
+                75%  {background-position: left bottom;}
+                100% {background-position: left top;}
+            }
+            @-webkit-keyframes zoom-in-out {
+                0%   {background-size: 400px 600px;}
+                25%  {background-size: 425px 633px;}
+                50%  {background-size: 450px 675px;}
+                75%  {background-size: 475px 713px;}
+                100% {background-size: 500px 750px;}
+            }
+            @keyframes zoom-in-out {
+                0%   {background-size: 400px 600px;}
+                25%  {background-size: 425px 633px;}
+                50%  {background-size: 450px 675px;}
+                75%  {background-size: 475px 713px;}
+                100% {background-size: 500px 750px;}
+            }
+            #adimate1, #adimate2{
+                background-repeat: no-repeat;
+                background-position: center;
+                display: inline-block;
+                margin-right: 25px;
+                background-size: contain;
+                animation-duartion: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+                -webkit-animation-duration: 6s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-direction: alternate;
+            }
+            #adimate1{
+                height: 600px;
+                width: 400px;
+                background-image: url('http://cdn-s3.si.com/s3fs-public/styles/si_gallery_slide/public/swimsuit/web/hannah-ferguson/2016/hannah-ferguson-2016-photo-sports-illustrated-x160011_tk3_4232-rawwmfinal1920.jpg?itok=nntXnzoI');
+                background-size:450px 675px;
+                animation-name: zoom-in-out;
+                -webkit-animation-name: zoom-in-out;
+                -webkit-animation-duration: 8s;
+            }
+            #adimate2{
+                height: 330px;
+                width: 500px;
+                background-image: url('http://www.blogcdn.com/slideshows/images/slides/379/487/4/S3794874/slug/l/si-swimsuit-1.jpg');
+                background-size: 540px 360px;
+                animation-name: zoom-rotate;
+                -webkit-animation-name: zoom-rotate;
+            }
+            #adimate1 {
+                /* display:none; */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="adimate1">
+        </div>
+        <div id="adimate2">
+        </div>
+    </body>
+</html>
